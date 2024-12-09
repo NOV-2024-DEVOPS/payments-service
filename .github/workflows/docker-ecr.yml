@@ -65,7 +65,7 @@ jobs:
     - name: Build and analyze with SonarCloud
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=NOV-2024-payments-service -Dsonar.organization=nov-2024-devops -Dsonar.host.url=https://sonarcloud.io
+      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=NOV-2024-DEVOPS_payments-service -Dsonar.organization=nov-2024-devops -Dsonar.host.url=https://sonarcloud.io
 
     - name: Install Newman
       run: npm install -g newman
